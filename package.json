@@ -1,0 +1,42 @@
+{
+  "name": "destiny2-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing Destiny 2 inventory",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "destiny-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "bin:link": "npm link"
+  },
+  "keywords": [
+    "destiny2",
+    "cli",
+    "inventory-management"
+  ],
+  "author": "Antonin Juquel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.13.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "inquirer": "^12.4.1",
+    "lowdb": "^7.0.1",
+    "open": "^10.1.0",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1"
+  }
+}
